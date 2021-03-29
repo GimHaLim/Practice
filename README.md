@@ -248,7 +248,7 @@ new paragraph~~.
 
 ### Autolinks란?
 
-### Autolinks의 구성요소 :  <and to> 그리고, 더 작은 환경에서 인식될지라도, <and to>를 사용하지 않고도 구성할 수 있다.
+### Autolinks의 구성요소 :  \<and to\> 그리고, 더 작은 환경에서 인식될지라도, \<and to\>를 사용하지 않고도 구성할 수 있다.
 
 ### Autolink 특징 1 :  
 - 인식된 모든 autolink는 선의 시작 부분, 공백 뒤 또는 구분문자\(\* \_ \~ \.)에만 사용할 수 있다.  
