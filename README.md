@@ -134,14 +134,14 @@ bar | baz
 
 #### HTML :  
 
-\<table\>
-\<thead\>
-\<tr\>
-\<th\>abc\</th\>
-\<th\>def\</th\>
-\</tr\>
-\</thead\>
-\</table\>
+\<table\>  
+\<thead\>  
+\<tr\>  
+\<th\>abc\</th\>  
+\<th\>def\</th\>  
+\</tr\>  
+\</thead\>  
+\</table\>  
 
 ## 2. Task list items
 
