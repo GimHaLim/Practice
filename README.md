@@ -1,4 +1,4 @@
-# Practice GitHb Flavered Markdown Exensions
+# Practice GitHub Flavered Markdown Exensions
 
 ## 1. table
 
