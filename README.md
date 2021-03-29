@@ -1,4 +1,4 @@
-# Practice Exensions
+# Practice GitHb Flavered Markdown Exensions
 
 ## 1. table
 
@@ -21,11 +21,13 @@ Markdown :
       | baz | bim |
 
 Rendered Output :  
+
 | foo | bar |
 | --- | --- |
 | baz | bim |
 
 HTML :  
+
 \<table\>  
 \<thead\>  
 \<tr\>  
@@ -50,6 +52,7 @@ Markdown :
       bar | baz
 
 Rendered Output :  
+
 | abc | defghi |
 :-: | -----------:
 bar | baz
@@ -64,6 +67,7 @@ Markdown :
       | b **\|\** im \|  
 
 Rendered Output :  
+
 | f\|oo  |
 | ------ |
 | b `\|` az |
@@ -79,6 +83,7 @@ Markdown :
       > bar
 
 Rendered Output :  
+
 | abc | def |
 | --- | --- |
 | bar | baz |
@@ -94,6 +99,7 @@ Markdown :
       | bar |  
 
 Rendered Output :  
+
 | abc | def |  
 | --- |  
 | bar |
@@ -108,6 +114,7 @@ Markdown :
       | bar | baz | boo |  
 
 Rendered Output :  
+
 | abc | def |
 | --- | --- |
 | bar |
@@ -121,10 +128,12 @@ Markdown :
       | --- | --- |  
 
 Rendered Output :  
+
 | abc | def |
 | --- | --- |
 
 HTML :  
+
 \<table\>
 \<thead\>
 \<tr\>
@@ -155,10 +164,12 @@ Markdown :
       - [x] bar  
 
 Rendered Output :  
+
 - [ ] foo
 - [x] bar
 
 HTML :  
+
 \<ul>  
 \<l\>\<input disabled="" type="checkbox"\> foo\</li\>  
 \<li\>\<input checked="" disabled="" type="checkbox"\> bar\</li\>  
@@ -174,12 +185,14 @@ Markdown :
       - [ ] bim  
 
 Rendered Output :  
+
 - [x] foo
   - [ ] bar
   - [x] baz
 - [ ] bim
 
 HTML :  
+
 \<ul\>  
 \<li\>\<input checked="" disabled="" type="checkbox"\> foo  
 \<ul\>  
@@ -189,6 +202,8 @@ HTML :
 \</li\>  
 \<li\>\<input disabled="" type="checkbox"\> bim\</li\>  
 \</ul\>  
+
+## 3. Strikethrough
 
 ### Strikethrough란?
 두 개의 타일(~)로 묶어 사용하는 추가적인 강조 유형.
@@ -203,9 +218,11 @@ Markdown :
       ~~Hi~~ Hello, world!
 
 Rendered Output :  
+
 ~~Hi~~ Hello, world!
 
 HTML :  
+
 \<p\>\<del\>Hi\</del\> Hello, world!\</p\>
 
 ### EXAMPLE 2 : 일반 강조 구분 기호와 마찬가지로, 새로운 단락은 구문 분석을 통해 strikethrough를 중단한다.
@@ -217,13 +234,17 @@ Markdown :
       new paragraph~~.  
 
 Rendered Output :  
+
 This ~~has a
 
 new paragraph~~.
 
 HTML :  
+
 \<p\>This \~\~has a\</p\>  
 \<p\>new paragraph\~\~.\</p\>  
+
+## 4. Autolinks
 
 ### Autolinks란?
 
@@ -240,9 +261,11 @@ Markdown :
       www.commonmark.org
 
 Rendered Output :  
+
 www.commonmark.org
 
 HTML :  
+
 \<p\>\<a href="http://www.commonmark.org"\>www.commonmark.org\</a\>\</p\>  
 
 ### EXAMPLE 2 : 유효한 도메인 후 공백이 아닌 0자 이상의 문자가 다음에 올 수 있다.  
@@ -252,6 +275,7 @@ Markdown :
       Visit www.commonmark.org/help for more information.  
 
 Rendered Output :  
+
 Visit www.commonmark.org/help for more information.
 
 ### EXAMPLE 3 : 그런 다음 확장 자동 링크 경로 검증을 적용한다. 후행 punctuation\(특히, \? \! \. \, \: \* \_ \~ \)은 링크 내부에 포함될 수 있지만 자동 링크의 일부로 간주되지 않는다.  
@@ -263,6 +287,7 @@ Markdown :
       Visit www.commonmark.org/a.b.  
 
 Rendered Output :  
+
 Visit www.commonmark.org.
 
 Visit www.commonmark.org/a.b.
@@ -296,6 +321,7 @@ Markdown :
       www.google.com/search?q=(business))+ok  
 
 Rendered Output :  
+
 www.google.com/search?q=(business))+ok
 
 ### EXAMPLE 6 : Autolink가 세미콜론\(/;/)으로 끝나는 경우 entity reference와 유사한지 확인한다. if the preceding text is & followed by one or more alphanumeric characters. 그렇다면 autolink에서 제외된다.  
@@ -307,6 +333,7 @@ Markdown :
       www.google.com/search?q=commonmark&hl;
 
 Rendered Output :  
+
 www.google.com/search?q=commonmark&hl=en
 
 www.google.com/search?q=commonmark&hl;
@@ -349,6 +376,7 @@ Markdown :
       foo@bar.baz
 
 Rendered Output :  
+
 foo@bar.baz
 
 ### EXAMPLE 10 : \+는 \@ 앞에 쓸 수 있지만, 그 후에는 나타날 수 없다.  
@@ -358,6 +386,7 @@ Markdown :
       hello@mail+xyz.example isn't valid, but hello+xyz@mail.example is.
 
 Rendered Output :  
+
 hello@mail+xyz.example isn't valid, but hello+xyz@mail.example is.
 
 ### EXAMPLE 11 :  \.\, \-\, 및 \_는 \@의 양쪽에 위치할 수 있지만, \.만 전자 메일 주소 끝에 발생할 수 있다. 이 경우에는 주소의 일부로 간주되지 않는다.  
@@ -373,6 +402,7 @@ Markdown :
       a.b-c_d@a.b_
 
 Rendered Output :  
+
 a.b-c_d@a.b
 
 a.b-c_d@a.b.
@@ -381,19 +411,21 @@ a.b-c_d@a.b-
 
 a.b-c_d@a.b_
 
+## 5. Disallowed Raw HTML
+
 ### Disallowed Raw HTML이란?  
-HTML 출력을 렌더링 할 때 다음과 같은 HTML 태그가 필터링 된다. (tagfilter)  
-- <title>
-- <textarea>
-- <style>
-- <xpm>
-- <iframe>
-- <noembed>
-- <script>
-- <plaintext>
+HTML 출력을 렌더링 할 때 다음과 같은 HTML 태그가 필터링 된다. \(tagfilter\)  
+- \<title\>
+- \<textarea\>
+- \<style\>
+- \<xpm\>
+- \<iframe\>
+- \<noembed\>
+- \<script\>
+- \<plaintext\>
 
 ### Disallowed Raw HTML 특징 :  
-- Filtering is done by replacing the leading < with the entity &lt;. 이러한 태그들은 특히 HTML이 그들 고유의 방식으로 해석되는 방법을 변경할 때 선택되며, 이것은 일반적으로 다른 랜더링된 Markdown 컨텐츠의 맥락에서 바람직하지 않다.  
+- Filtering is done by replacing the leading \< with the entity \&lt\;. 이러한 태그들은 특히 HTML이 그들 고유의 방식으로 해석되는 방법을 변경할 때 선택되며, 이것은 일반적으로 다른 랜더링된 Markdown 컨텐츠의 맥락에서 바람직하지 않다.  
 - 다른 모든 HTML 태그는 그대로 유지된다.  
 
 ### EXAMPLE 1 :  
