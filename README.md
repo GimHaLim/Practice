@@ -14,19 +14,19 @@
 
 ### EXAMPLE 1 : Table  
 
-Markdown :  
+#### Markdown :  
 
       | foo | bar |  
       | --- | --- |  
       | baz | bim |
 
-Rendered Output :  
+#### Rendered Output :  
 
 | foo | bar |
 | --- | --- |
 | baz | bim |
 
-HTML :  
+#### HTML :  
 
 \<table\>  
 \<thead\>  
@@ -45,13 +45,13 @@ HTML :
 
 ### EXAMPLE 2 : 한 열의 셀은 길이가 일치할 필요는 없지만, 셀의 길이가 일치하면 더 쉽게 읽을 수 있다. 마찬가지로 선행 및 후행 파이프의 사용도 일관되지 않을 수 있다.  
 
-Markdown :  
+#### Markdown :  
 
       | abc | defghi |  
       :-: | -----------:  
       bar | baz
 
-Rendered Output :  
+#### Rendered Output :  
 
 | abc | defghi |
 :-: | -----------:
@@ -59,14 +59,14 @@ bar | baz
 
 ### EXAMPLE 3 : 다른 inline span을 포함하여 이스케이핑을 통해 셀 내용물에 파이프를 포함할 수 있다.  
 
-Markdown :  
+#### Markdown :  
 
       | f\|oo  |  
       | ------ |  
       | b `|` az |  
       | b **\|\** im \|  
 
-Rendered Output :  
+#### Rendered Output :  
 
 | f\|oo  |
 | ------ |
@@ -75,14 +75,14 @@ Rendered Output :
 
 ### EXAMPLE 4 : 테이블은 첫 번째 빈 라인 또는 다른 블록 레벨 구조의 시작 부분에서 파손된다.  
 
-Markdown :  
+#### Markdown :  
 
       | abc | def |  
       | --- | --- |  
       | bar | baz |  
       > bar
 
-Rendered Output :  
+#### Rendered Output :  
 
 | abc | def |
 | --- | --- |
@@ -92,13 +92,13 @@ Rendered Output :
 ### EXAMPLE 5 : 머리글 행은 셀 수에 있는 구분자 행과 일치해야 한다. 그렇지 않으면 테이블이 인식되지 않는다.  
   
 
-Markdown :  
+#### Markdown :  
 
       | abc | def |
       | --- |  
       | bar |  
 
-Rendered Output :  
+#### Rendered Output :  
 
 | abc | def |  
 | --- |  
@@ -106,14 +106,14 @@ Rendered Output :
 
 ### EXAMPLE 6 : 표의 나머지 행은 셀 수에 따라 다를 수 있다. 헤더 행에 셀 수보다 적은 셀 수가 있다면 빈 셀이 삽입된다. 크기가 클 경우는 무시된다.  
 
-Markdown :  
+#### Markdown :  
 
       | abc | def |  
       | --- | --- |  
       | bar |  
       | bar | baz | boo |  
 
-Rendered Output :  
+#### Rendered Output :  
 
 | abc | def |
 | --- | --- |
@@ -122,17 +122,17 @@ Rendered Output :
 
 ### EXAMPLE 7 : 본문에 행이 없는 경우 HTML 출력에 <tbody>가 생성되지 않는다.  
 
-Markdown :  
+#### Markdown :  
 
       | abc | def |  
       | --- | --- |  
 
-Rendered Output :  
+#### Rendered Output :  
 
 | abc | def |
 | --- | --- |
 
-HTML :  
+#### HTML :  
 
 \<table\>
 \<thead\>
@@ -158,17 +158,17 @@ HTML :
 
 ### EXAMPLE 1 : Task list items
 
-Markdown :  
+#### Markdown :  
 
       - [ ] foo  
       - [x] bar  
 
-Rendered Output :  
+#### Rendered Output :  
 
 - [ ] foo
 - [x] bar
 
-HTML :  
+#### HTML :  
 
 \<ul>  
 \<l\>\<input disabled="" type="checkbox"\> foo\</li\>  
@@ -177,21 +177,21 @@ HTML :
 
 ### EXAMPLE 2 : Task list는 임의로 중첩될 수 있다.  
 
-Markdown :  
+#### Markdown :  
 
       - [x] foo  
         - [ ] bar  
         - [x] baz  
       - [ ] bim  
 
-Rendered Output :  
+#### Rendered Output :  
 
 - [x] foo
   - [ ] bar
   - [x] baz
 - [ ] bim
 
-HTML :  
+#### HTML :  
 
 \<ul\>  
 \<li\>\<input checked="" disabled="" type="checkbox"\> foo  
@@ -213,33 +213,33 @@ HTML :
 
 ### EXAMPLE 1 :  Strikehrough
 
-Markdown :  
+#### Markdown :  
 
       ~~Hi~~ Hello, world!
 
-Rendered Output :  
+#### Rendered Output :  
 
 ~~Hi~~ Hello, world!
 
-HTML :  
+#### HTML :  
 
 \<p\>\<del\>Hi\</del\> Hello, world!\</p\>
 
 ### EXAMPLE 2 : 일반 강조 구분 기호와 마찬가지로, 새로운 단락은 구문 분석을 통해 strikethrough를 중단한다.
 
-Markdown :  
+#### Markdown :  
 
       This ~~has a  
 
       new paragraph~~.  
 
-Rendered Output :  
+#### Rendered Output :  
 
 This ~~has a
 
 new paragraph~~.
 
-HTML :  
+#### HTML :  
 
 \<p\>This \~\~has a\</p\>  
 \<p\>new paragraph\~\~.\</p\>  
@@ -256,37 +256,37 @@ HTML :
 
 ### EXAMPLE 1 : 스키마 http는 자동으로 삽입된다.  
 
-Markdown :  
+#### Markdown :  
 
       www.commonmark.org
 
-Rendered Output :  
+#### Rendered Output :  
 
 www.commonmark.org
 
-HTML :  
+#### HTML :  
 
 \<p\>\<a href="http://www.commonmark.org"\>www.commonmark.org\</a\>\</p\>  
 
 ### EXAMPLE 2 : 유효한 도메인 후 공백이 아닌 0자 이상의 문자가 다음에 올 수 있다.  
 
-Markdown :  
+#### Markdown :  
 
       Visit www.commonmark.org/help for more information.  
 
-Rendered Output :  
+#### Rendered Output :  
 
 Visit www.commonmark.org/help for more information.
 
 ### EXAMPLE 3 : 그런 다음 확장 자동 링크 경로 검증을 적용한다. 후행 punctuation\(특히, \? \! \. \, \: \* \_ \~ \)은 링크 내부에 포함될 수 있지만 자동 링크의 일부로 간주되지 않는다.  
 
-Markdown :  
+#### Markdown :  
 
       Visit www.commonmark.org.  
 
       Visit www.commonmark.org/a.b.  
 
-Rendered Output :  
+#### Rendered Output :  
 
 Visit www.commonmark.org.
 
@@ -294,7 +294,7 @@ Visit www.commonmark.org/a.b.
 
 ### EXAMPLE 4 : autolink가 \) 안에서 종ㄹ되면 전체 자동 링크에서 괄호 총 수를 scan한다. 여는 괄호보다 닫히는 괄호 수가 더 많은 경오, 괄호 안에 autolink를 포함하기 위해 autolink의 일치하지 않는 후행 괄호 부분은 고려하지 않는다.  
 
-Markdown :  
+#### Markdown :  
 
       www.google.com/search?q=Markup+(business)  
 
@@ -304,7 +304,7 @@ Markdown :
 
       (www.google.com/search?q=Markup+(business)  
 
-Rendered Output :  
+#### Rendered Output :  
 
 www.google.com/search?q=Markup+(business)
 
@@ -316,23 +316,23 @@ www.google.com/search?q=Markup+(business)))
 
 ### EXAMPLE 5 : 위의 검사는 링크가 닫히는 괄호로 끝날 때만 수행되므로, autolink 내부에 parenthesis만 있는 경우 EXAMPLE 4와 같은 특별한 규칙이 적용되지 않는다.  
 
-Markdown :  
+#### Markdown :  
 
       www.google.com/search?q=(business))+ok  
 
-Rendered Output :  
+#### Rendered Output :  
 
 www.google.com/search?q=(business))+ok
 
 ### EXAMPLE 6 : Autolink가 세미콜론\(/;/)으로 끝나는 경우 entity reference와 유사한지 확인한다. if the preceding text is & followed by one or more alphanumeric characters. 그렇다면 autolink에서 제외된다.  
 
-Markdown :  
+#### Markdown :  
 
       www.google.com/search?q=commonmark&hl=en
 
       www.google.com/search?q=commonmark&hl;
 
-Rendered Output :  
+#### Rendered Output :  
 
 www.google.com/search?q=commonmark&hl=en
 
@@ -340,24 +340,24 @@ www.google.com/search?q=commonmark&hl;
 
 ### EXAMPLE 7 : \<는 autolink를 즉시 종료한다.  
 
-Markdown :  
+#### Markdown :  
 
       www.commonmark.org/he<lp
 
 
-Rendered Output :  
+#### Rendered Output :  
 
 www.commonmark.org/he<lp
 
 ### EXAMPLE 8 : 확장돤 URL autolink는 경로 검증에 따라 scheme 중 하나가 http:// 또는 https:/ 뒤에 유효한 도메인이 있는 다음 zero or more non-space non-\< 문자를 사용할 때 인식된다.  
 
-Markdown :  
+#### Markdown :  
 
       http://commonmark.org
 
       (Visit https://encrypted.google.com/search?q=Markup+(business))
 
-Rendered Output :  
+#### Rendered Output :  
 
 http://commonmark.org
 
@@ -371,27 +371,27 @@ http://commonmark.org
 
 ### EXAMPLE 9 : The scheme mailto가 생성된 링크에 자동으로 추가된다.  
 
-Markdown :  
+#### Markdown :  
 
       foo@bar.baz
 
-Rendered Output :  
+#### Rendered Output :  
 
 foo@bar.baz
 
 ### EXAMPLE 10 : \+는 \@ 앞에 쓸 수 있지만, 그 후에는 나타날 수 없다.  
 
-Markdown :  
+#### Markdown :  
 
       hello@mail+xyz.example isn't valid, but hello+xyz@mail.example is.
 
-Rendered Output :  
+#### Rendered Output :  
 
 hello@mail+xyz.example isn't valid, but hello+xyz@mail.example is.
 
 ### EXAMPLE 11 :  \.\, \-\, 및 \_는 \@의 양쪽에 위치할 수 있지만, \.만 전자 메일 주소 끝에 발생할 수 있다. 이 경우에는 주소의 일부로 간주되지 않는다.  
 
-Markdown :  
+#### Markdown :  
 
       a.b-c_d@a.b
 
@@ -401,7 +401,7 @@ Markdown :
 
       a.b-c_d@a.b_
 
-Rendered Output :  
+#### Rendered Output :  
 
 a.b-c_d@a.b
 
@@ -430,7 +430,7 @@ HTML 출력을 렌더링 할 때 다음과 같은 HTML 태그가 필터링 된�
 
 ### EXAMPLE 1 :  
 
-Markdown :  
+#### Markdown :  
 
       <strong> <title> <style> <em>  
 
@@ -438,7 +438,7 @@ Markdown :
         <xmp> is disallowed.  <XMP> is also disallowed.  
       </blockquote>  
 
-Rendered Output :  
+#### Rendered Output :  
 
 <strong> <title> <style> <em>
 
@@ -446,7 +446,7 @@ Rendered Output :
   <xmp> is disallowed.  <XMP> is also disallowed.
 </blockquote>
 
-HTML :  
+#### HTML :  
 
 \<p\>\<strong\> \&lt\;title\> \&lt\;style\> \<em\>\</p\>  
 \<blockquote\>  
