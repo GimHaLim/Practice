@@ -268,7 +268,7 @@ www.commonmark.org
 
 \<p\>\<a href="http://www.commonmark.org"\>www.commonmark.org\</a\>\</p\>  
 
-### EXAMPLE 2 : 유효한 도메인 후 공백이 아닌 0자 이상의 문자가 다음에 올 수 있다.  
+### EXAMPLE 2 : 유효한 도메인 후 zero or more non-space non\-\< 문자가 다음에 올 수 있다.  
 
 #### Markdown :  
 
@@ -292,7 +292,7 @@ Visit www.commonmark.org.
 
 Visit www.commonmark.org/a.b.
 
-### EXAMPLE 4 : autolink가 \) 안에서 종ㄹ되면 전체 자동 링크에서 괄호 총 수를 scan한다. 여는 괄호보다 닫히는 괄호 수가 더 많은 경오, 괄호 안에 autolink를 포함하기 위해 autolink의 일치하지 않는 후행 괄호 부분은 고려하지 않는다.  
+### EXAMPLE 4 : autolink가 \) 안에서 종료되면 전체 자동 링크에서 괄호 총 수를 scan한다. 여는 괄호보다 닫히는 괄호 수가 더 많은 경오, 괄호 안에 autolink를 포함하기 위해 autolink의 일치하지 않는 후행 괄호 부분은 고려하지 않는다.  
 
 #### Markdown :  
 
@@ -324,7 +324,7 @@ www.google.com/search?q=Markup+(business)))
 
 www.google.com/search?q=(business))+ok
 
-### EXAMPLE 6 : Autolink가 세미콜론\(/;/)으로 끝나는 경우 entity reference와 유사한지 확인한다. if the preceding text is & followed by one or more alphanumeric characters. 그렇다면 autolink에서 제외된다.  
+### EXAMPLE 6 : Autolink가 세미콜론\(/;/)으로 끝나는 경우 entity reference와 유사한지 확인한다. If the preceding text is \& followed by one or more alphanumeric characters. 그렇다면 autolink에서 제외된다.  
 
 #### Markdown :  
 
@@ -349,7 +349,7 @@ www.google.com/search?q=commonmark&hl;
 
 www.commonmark.org/he<lp
 
-### EXAMPLE 8 : 확장돤 URL autolink는 경로 검증에 따라 scheme 중 하나가 http:// 또는 https:/ 뒤에 유효한 도메인이 있는 다음 zero or more non-space non-\< 문자를 사용할 때 인식된다.  
+### EXAMPLE 8 : 확장돤 URL autolink는 경로 검증에 따라 scheme 중 하나가 http:// 또는 https:/ 뒤에 유효한 도메인이 있는 다음 zero or more non-space non\-\< 문자를 사용할 때 인식된다.  
 
 #### Markdown :  
 
